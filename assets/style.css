@@ -573,3 +573,258 @@ svg{display:block}
     background:rgba(0,0,0,.07) !important;
   }
 }
+
+/* V9 CLARO CHAMPAGNE */
+:root{--ivory:#fbf5ed;--champagne:#ead4bd;--rose:#b86f62;--brown:#3c2921;--gold:#b98a3c;--gold2:#d4ad62}
+body{background:#fbf5ed!important;color:#3c2921!important}
+.top-strip{background:#ad6858!important;border-bottom:0!important}
+.ticker-item{color:#fff8f2!important}.ticker-item small{color:rgba(255,248,242,.78)!important}.top-icon{color:#f2d7a2!important}
+.site-header{background:rgba(255,250,244,.98)!important;border-bottom:1px solid rgba(112,77,55,.15)!important;box-shadow:0 5px 22px rgba(83,55,40,.06)!important}
+.site-header nav a{color:#30251f!important}.site-header nav a:hover,.site-header nav a.active{color:#9a6a2c!important}
+.header-actions button,.header-actions a,.mobile-menu-btn{color:#30251f!important}.cart-demo i{background:#d4ad62!important;color:#2b2018!important}
+.hero,.hero-slide{background-color:#f8eee4!important}
+.hero-slide:before{background:linear-gradient(90deg,rgba(251,245,237,.98) 0%,rgba(251,245,237,.94) 28%,rgba(251,245,237,.62) 48%,rgba(251,245,237,.08) 67%,transparent 100%)!important}
+.hero-content .eyebrow,.hero-content .kicker,.section-kicker{color:#a56f59!important}
+.hero-content h1{color:#39261d!important;text-shadow:none!important}.hero-content h1 span{color:#b98a3c!important}.hero-content p{color:#5e4c42!important}
+.hero-content .btn,.hero-content a.btn{background:linear-gradient(135deg,#c89b4f,#e0bc75)!important;color:#2b211a!important;border-color:#c89b4f!important}
+.carousel-arrow{background:rgba(255,247,238,.9)!important;border:1px solid rgba(185,138,60,.34)!important;color:#8b6129!important}
+.benefit-grid{background:#fffaf5!important;border-color:rgba(112,77,55,.15)!important;box-shadow:0 12px 32px rgba(84,54,38,.06)!important}
+.benefit-grid>div{border-color:rgba(112,77,55,.15)!important}.benefit-grid b{color:#443229!important}.benefit-grid small{color:#806b60!important}.benefit-icon{color:#b98a3c!important}
+.products-section,.about-section,.faq-section{background:#fbf5ed!important;color:#3c2921!important}
+.section-title,.products-section h2,.about-section h2,.faq-section h2{color:#3c2921!important}
+.product-card,.faq-item{background:#fffaf5!important;border-color:rgba(130,92,67,.13)!important;box-shadow:0 12px 34px rgba(93,59,39,.07)!important}
+.product-card h3,.faq-item summary{color:#3b2b23!important}.product-card p,.faq-item p{color:#7b6458!important}
+.filter{background:#fffaf5!important;border-color:#d9c3ad!important;color:#665047!important}.filter.active,.filter:hover{background:#b77a69!important;border-color:#b77a69!important;color:#fff!important}
+.search-panel{background:rgba(255,250,244,.99)!important;color:#392a23!important}
+footer,.site-footer{background:#382a24!important;color:#f8eee4!important}
+@media(max-width:820px){
+.site-header nav{background:linear-gradient(180deg,#fffaf4,#f8ede2)!important;border-right:1px solid rgba(185,138,60,.3)!important;box-shadow:18px 0 50px rgba(76,48,32,.14)!important}
+.mobile-nav-brand{border-bottom-color:rgba(132,91,60,.14)!important}.mobile-nav-brand span{color:#9b6c30!important}.mobile-nav-label{color:#a28c7e!important}
+.site-header nav>a{color:#4a382f!important;border-bottom-color:rgba(112,77,55,.1)!important}.site-header nav>a.active{color:#9b6a27!important;background:linear-gradient(90deg,rgba(212,173,98,.16),transparent 75%)!important}
+.nav-mark{background:#c7b5a7!important}.site-header nav>a.active .nav-mark{background:#b98a3c!important}.menu-backdrop,.menu-backdrop.open{background:rgba(58,39,29,.1)!important}
+}
+
+/* ==========================================================
+   V10 — ROSÉ CHAMPAGNE / SEM HERO PRETO
+   ========================================================== */
+:root{
+ --fc-cream:#fffaf5;
+ --fc-ivory:#fbf2e9;
+ --fc-blush:#f3ddd5;
+ --fc-rose:#bd7868;
+ --fc-rose-dark:#9e5e51;
+ --fc-ink:#392923;
+ --fc-muted:#806b62;
+ --fc-gold:#b98a3c;
+ --fc-gold-light:#d9b66d;
+}
+
+/* FUNDO GERAL */
+html,body{background:var(--fc-cream)!important;color:var(--fc-ink)!important}
+
+/* TICKER */
+.top-strip{
+ background:linear-gradient(90deg,#a96052 0%,#c17c6b 48%,#ad6759 100%)!important;
+ color:#fff!important;
+}
+.ticker-item,.ticker-item b{color:#fff!important}
+.ticker-item small{color:rgba(255,255,255,.78)!important}
+.top-icon{color:#f4d89f!important}
+
+/* HEADER */
+.site-header{
+ background:linear-gradient(90deg,#fffaf5 0%,#fff 52%,#fbefe7 100%)!important;
+ border-bottom:1px solid rgba(125,82,62,.13)!important;
+ box-shadow:0 5px 20px rgba(96,62,45,.055)!important;
+}
+.site-header nav a{color:#3b2b25!important}
+.site-header nav a:hover,.site-header nav a.active{color:#a66e32!important}
+.site-header nav a::after{background:#c09143!important}
+.header-actions button,.header-actions a,.mobile-menu-btn{color:#3b2b25!important}
+
+/* HERO — elimina completamente o painel preto */
+.hero,.hero-carousel,.hero-slide{
+ background:#f8e7df!important;
+}
+.hero-slide{
+ background-image:
+ linear-gradient(110deg,#fffaf5 0%,#faeee7 34%,#f2d8cf 58%,#e8c1b5 100%)!important;
+}
+.hero-photo{
+ /* foto continua à direita, mas sem preto artificial */
+ background-color:#ead0c5!important;
+}
+
+/* gradiente por cima da foto para integrar com o rosé */
+.hero-overlay{
+ background:
+ linear-gradient(90deg,
+   rgba(255,250,245,.99) 0%,
+   rgba(255,248,242,.97) 23%,
+   rgba(249,232,223,.88) 39%,
+   rgba(235,198,186,.32) 57%,
+   rgba(54,35,27,.04) 76%,
+   rgba(54,35,27,.10) 100%)!important;
+}
+
+/* compatibilidade caso o layout use pseudo-elemento */
+.hero-slide::before{
+ background:
+ linear-gradient(90deg,
+   rgba(255,250,245,.99) 0%,
+   rgba(255,248,242,.96) 27%,
+   rgba(247,225,215,.72) 46%,
+   rgba(247,225,215,.10) 68%,
+   transparent 100%)!important;
+}
+
+/* TEXTOS DO HERO — contraste correto */
+.hero-content,
+.hero-content *{text-shadow:none!important}
+.hero-content .eyebrow,
+.hero-content .kicker{color:#a86858!important}
+.hero-content h1{color:#392923!important}
+.hero-content h1 span{color:#b98a3c!important}
+.hero-content p{color:#725b50!important}
+
+/* corrige spans escuros herdados dentro do título */
+.hero-content h1 *,
+.hero-content h2 *{color:inherit!important}
+.hero-content h1 .gold,
+.hero-content h2 .gold{color:#b98a3c!important}
+
+/* BOTÃO */
+.hero-content .btn,.hero-content a.btn{
+ background:linear-gradient(135deg,#bd8d3f,#dfbd75)!important;
+ border:1px solid #c69b52!important;
+ color:#34251e!important;
+ box-shadow:0 9px 25px rgba(149,94,52,.14)!important;
+}
+.hero-content .btn:hover,.hero-content a.btn:hover{
+ background:linear-gradient(135deg,#c99b4d,#e8ca8b)!important;
+}
+
+/* setas */
+.carousel-arrow{
+ background:rgba(255,250,245,.91)!important;
+ border:1px solid rgba(177,128,54,.35)!important;
+ color:#9c6c2c!important;
+ box-shadow:0 5px 18px rgba(82,48,32,.08)!important;
+}
+.carousel-dots button{background:rgba(111,77,62,.30)!important}
+.carousel-dots button.active{background:#b98a3c!important}
+
+/* BARRA DE BENEFÍCIOS */
+.benefit-grid{
+ background:linear-gradient(90deg,#fffaf5,#fdf3ec,#fffaf5)!important;
+ border-top:1px solid rgba(128,83,61,.12)!important;
+ border-bottom:1px solid rgba(128,83,61,.12)!important;
+ box-shadow:none!important;
+}
+.benefit-grid>div{border-color:rgba(128,83,61,.13)!important}
+.benefit-grid b{color:#44322a!important}
+.benefit-grid small{color:#856d61!important}
+.benefit-icon{color:#b98a3c!important}
+
+/* DEMAIS SEÇÕES: alternância creme / blush muito suave */
+.products-section{
+ background:linear-gradient(180deg,#fffaf5 0%,#fbf1e9 100%)!important;
+}
+.about-section{
+ background:linear-gradient(135deg,#f3ddd5 0%,#fff8f2 50%,#efd5cb 100%)!important;
+}
+.faq-section{
+ background:linear-gradient(180deg,#fffaf5,#f8ebe4)!important;
+}
+.section-title,.products-section h2,.about-section h2,.faq-section h2{
+ color:#3c2a23!important;
+}
+.section-kicker,.eyebrow{color:#ad6c5c!important}
+
+/* CARDS */
+.product-card,.faq-item{
+ background:rgba(255,252,248,.96)!important;
+ border:1px solid rgba(142,93,67,.13)!important;
+ box-shadow:0 12px 30px rgba(105,66,45,.065)!important;
+}
+.product-card:hover{
+ transform:translateY(-4px);
+ box-shadow:0 17px 38px rgba(105,66,45,.11)!important;
+}
+.product-card h3,.faq-item summary{color:#402f27!important}
+.product-card p,.faq-item p{color:#80695e!important}
+.product-card .price,.product-card strong{color:#a87530!important}
+
+/* FILTROS */
+.filter{
+ background:#fffaf5!important;
+ color:#644c42!important;
+ border:1px solid #ddc5b5!important;
+}
+.filter:hover,.filter.active{
+ background:linear-gradient(135deg,#b76f60,#c98979)!important;
+ border-color:#b76f60!important;
+ color:#fff!important;
+}
+
+/* BUSCA */
+.search-panel{
+ background:rgba(255,250,245,.99)!important;
+ border-bottom-color:rgba(128,83,61,.14)!important;
+}
+.search-panel input{
+ background:#fff!important;color:#392923!important;
+ border-color:#dec7b7!important;
+}
+
+/* FOOTER — rosé escuro em vez de preto */
+footer,.site-footer{
+ background:linear-gradient(135deg,#77483f,#9b5c50)!important;
+ color:#fff8f2!important;
+ border-top:1px solid rgba(217,182,109,.30)!important;
+}
+
+/* MOBILE MENU: claro, coerente com a nova identidade */
+@media(max-width:820px){
+ .site-header nav{
+   background:
+     radial-gradient(circle at 0 0,rgba(217,182,109,.16),transparent 33%),
+     linear-gradient(180deg,#fffaf5 0%,#faeee7 52%,#f4ded5 100%)!important;
+   border-right:1px solid rgba(185,138,60,.25)!important;
+   box-shadow:16px 0 42px rgba(89,52,37,.12)!important;
+ }
+ .mobile-nav-brand{border-bottom-color:rgba(124,78,58,.12)!important}
+ .mobile-nav-brand span{color:#a57532!important}
+ .mobile-nav-label{color:#a18779!important}
+ .site-header nav>a{
+   color:#47342c!important;
+   border-bottom-color:rgba(118,76,57,.09)!important;
+ }
+ .site-header nav>a:hover{
+   color:#9b692d!important;
+   background:rgba(185,138,60,.05)!important;
+ }
+ .site-header nav>a.active{
+   color:#9d6b2c!important;
+   background:linear-gradient(90deg,rgba(217,182,109,.18),transparent 76%)!important;
+ }
+ .nav-mark{background:#c9b3a5!important}
+ .site-header nav>a.active .nav-mark{background:#b98a3c!important}
+ .menu-backdrop,.menu-backdrop.open{
+   background:rgba(76,45,34,.12)!important;
+   backdrop-filter:none!important;
+   -webkit-backdrop-filter:none!important;
+ }
+}
+
+/* mobile: integra a foto com o fundo claro */
+@media(max-width:600px){
+ .hero-overlay{
+   background:
+    linear-gradient(180deg,
+      rgba(255,250,245,.18) 0%,
+      rgba(255,250,245,.28) 35%,
+      rgba(255,247,241,.93) 72%,
+      #fff8f2 100%)!important;
+ }
+}
