@@ -1,48 +1,37 @@
 (() => {
   'use strict';
+  // ===== CARROSSEL PRINCIPAL — SWIPER =====
+  const heroSwiperEl = document.querySelector('.heroSwiper');
 
-  // ===== CARROSSEL PRINCIPAL =====
-  const slides = [...document.querySelectorAll('.hero-slide')];
-  const dotsWrap = document.querySelector('.carousel-dots');
-  let current = 0;
-  let timer = null;
-
-  if (slides.length && dotsWrap) {
-    slides.forEach((_, i) => {
-      const dot = document.createElement('button');
-      dot.type = 'button';
-      dot.setAttribute('aria-label', `Ir para o slide ${i + 1}`);
-      dot.addEventListener('click', () => goToSlide(i));
-      dotsWrap.appendChild(dot);
+  if (heroSwiperEl && window.Swiper) {
+    new Swiper(heroSwiperEl, {
+      loop: true,
+      speed: 650,
+      effect: 'slide',
+      grabCursor: true,
+      slidesPerView: 1,
+      slidesPerGroup: 1,
+      spaceBetween: 0,
+      roundLengths: true,
+      centeredSlides: false,
+      autoplay: {
+        delay: 5200,
+        disableOnInteraction: false
+      },
+      pagination: {
+        el: '.hero-pagination',
+        clickable: true,
+        bulletClass: 'hero-bullet',
+        bulletActiveClass: 'hero-bullet-active',
+        renderBullet: function (index, className) {
+          return `<button class="${className}" type="button" aria-label="Ir para slide ${index + 1}"></button>`;
+        }
+      }
     });
-
-    const dots = [...dotsWrap.querySelectorAll('button')];
-
-    function startTimer() {
-      clearInterval(timer);
-      timer = setInterval(() => goToSlide(current + 1), 5500);
-    }
-
-    function goToSlide(index) {
-      slides[current].classList.remove('active');
-      dots[current]?.classList.remove('active');
-
-      current = (index + slides.length) % slides.length;
-
-      slides[current].classList.add('active');
-      dots[current]?.classList.add('active');
-      startTimer();
-    }
-
-    dots[0]?.classList.add('active');
-
-    document.querySelector('.carousel-arrow.next')?.addEventListener('click', () => goToSlide(current + 1));
-    document.querySelector('.carousel-arrow.prev')?.addEventListener('click', () => goToSlide(current - 1));
-
-    startTimer();
   }
 
   // ===== MENU MOBILE =====
+
   const nav = document.querySelector('#mainNav');
   const menuBtn = document.querySelector('.mobile-menu-btn');
   const backdrop = document.querySelector('#menuBackdrop');

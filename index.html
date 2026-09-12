@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
   <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
@@ -73,8 +74,9 @@
   </div>
 
   <main id="inicio">
-    <section class="hero-carousel">
-      <article class="hero-slide active">
+    <section class="hero-carousel swiper heroSwiper" aria-label="Destaques">
+  <div class="swiper-wrapper">
+    <article class="hero-slide swiper-slide">
         <div class="hero-photo pos-1"></div><div class="hero-overlay"></div>
         <div class="hero-content">
           <span class="eyebrow">FÁTIMA CRISCIULLO • FIBRAS PREMIUM</span>
@@ -88,8 +90,7 @@
           </div>
         </div>
       </article>
-
-      <article class="hero-slide">
+<article class="hero-slide swiper-slide">
         <div class="hero-photo pos-2"></div><div class="hero-overlay"></div>
         <div class="hero-content">
           <span class="eyebrow">LINHAS SELECIONADAS</span>
@@ -98,8 +99,7 @@
           <a href="#produtos" class="hero-cta">VER COLEÇÃO <b>→</b></a>
         </div>
       </article>
-
-      <article class="hero-slide">
+<article class="hero-slide swiper-slide">
         <div class="hero-photo pos-3"></div><div class="hero-overlay"></div>
         <div class="hero-content">
           <span class="eyebrow">SUA BELEZA, SUA MARCA</span>
@@ -108,11 +108,9 @@
           <a href="#produtos" class="hero-cta">COMPRAR AGORA <b>→</b></a>
         </div>
       </article>
-
-      <button class="carousel-arrow prev" aria-label="Anterior">‹</button>
-      <button class="carousel-arrow next" aria-label="Próximo">›</button>
-      <div class="carousel-dots"></div>
-    </section>
+  </div>
+  <div class="swiper-pagination hero-pagination" aria-label="Paginação do carrossel"></div>
+</section>
 
     <section class="benefit-grid" id="beneficios">
       <div><svg class="benefit-icon" viewBox="0 0 24 24" aria-hidden="true">
@@ -126,7 +124,40 @@
 <path d="M4 5h16v11H9l-5 4z"/><path d="M8 9h8M8 12h5"/></svg><p><b>ATENDIMENTO</b><small>Suporte especializado</small></p></div>
     </section>
 
-    <section class="products-section" id="produtos">
+    <section class="fiber-origin">
+<div class="fiber-origin-inner">
+<span class="fiber-origin-kicker">SELEÇÃO INTERNACIONAL</span>
+<h2>Nossas fibras vêm de origens selecionadas</h2>
+<div class="fiber-origin-items">
+<div class="fiber-origin-item"><span class="fiber-flag-svg" aria-label="Europa">
+<svg viewBox="0 0 36 24" role="img">
+  <rect width="36" height="24" rx="2" fill="#003399"/>
+  <g fill="#FFCC00">
+    <circle cx="18" cy="5" r="1.1"/><circle cx="21.5" cy="6" r="1.1"/>
+    <circle cx="24" cy="8.5" r="1.1"/><circle cx="25" cy="12" r="1.1"/>
+    <circle cx="24" cy="15.5" r="1.1"/><circle cx="21.5" cy="18" r="1.1"/>
+    <circle cx="18" cy="19" r="1.1"/><circle cx="14.5" cy="18" r="1.1"/>
+    <circle cx="12" cy="15.5" r="1.1"/><circle cx="11" cy="12" r="1.1"/>
+    <circle cx="12" cy="8.5" r="1.1"/><circle cx="14.5" cy="6" r="1.1"/>
+  </g>
+</svg></span><div><strong>Europa</strong><small>Fibras europeias</small></div></div>
+<span class="fiber-divider"></span>
+<div class="fiber-origin-item"><span class="fiber-flag-svg" aria-label="Rússia">
+<svg viewBox="0 0 36 24" role="img">
+  <rect width="36" height="24" rx="2" fill="#fff"/>
+  <rect y="8" width="36" height="8" fill="#0039A6"/>
+  <path d="M0 16h36v6a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2z" fill="#D52B1E"/>
+</svg></span><div><strong>Rússia</strong><small>Fibras russas</small></div></div>
+<span class="fiber-divider"></span>
+<div class="fiber-origin-item"><span class="fiber-flag-svg" aria-label="Emirados Árabes Unidos">
+<svg viewBox="0 0 36 24" role="img">
+  <rect width="36" height="24" rx="2" fill="#fff"/>
+  <rect x="9" width="27" height="8" fill="#009A49"/>
+  <rect x="9" y="16" width="27" height="8" fill="#000"/>
+  <path d="M2 0h7v24H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2z" fill="#FF0000"/>
+</svg></span><div><strong>Dubai</strong><small>Fibras de Dubai</small></div></div>
+</div></div></section>
+<section class="products-section" id="produtos">
       <header class="section-heading">
         <span>NOSSA SELEÇÃO</span>
         <h2>NOSSOS PRODUTOS</h2>
@@ -488,6 +519,7 @@
     <div class="footer-note"><strong>FÁTIMA CRISCIULLO</strong><p>Beleza, presença e identidade.</p></div>
   </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="assets/app.js" defer></script>
 </body>
 </html>

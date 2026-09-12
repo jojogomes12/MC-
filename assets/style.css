@@ -828,3 +828,384 @@ footer,.site-footer{
       #fff8f2 100%)!important;
  }
 }
+
+/* ==========================================================
+   V11 — CONTROLES DO CARROSSEL + CTA ROSÉ
+   ========================================================== */
+
+/* Setas: circulares, compactas e elegantes */
+.carousel-arrow{
+  width:48px !important;
+  height:48px !important;
+  min-width:48px !important;
+  min-height:48px !important;
+  padding:0 !important;
+  border-radius:50% !important;
+  display:flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  background:rgba(255,250,245,.90) !important;
+  border:1px solid rgba(185,138,60,.52) !important;
+  color:#a87932 !important;
+  box-shadow:0 7px 20px rgba(87,53,37,.10) !important;
+  font-size:28px !important;
+  line-height:1 !important;
+  backdrop-filter:none !important;
+  -webkit-backdrop-filter:none !important;
+  transition:transform .2s ease,background .2s ease,box-shadow .2s ease !important;
+}
+.carousel-arrow:hover{
+  background:#fffaf5 !important;
+  transform:translateY(-50%) scale(1.06) !important;
+  box-shadow:0 9px 24px rgba(87,53,37,.16) !important;
+}
+.carousel-arrow.prev{left:22px !important}
+.carousel-arrow.next{right:22px !important}
+
+/* CTA principal: rosé sólido + texto branco */
+.hero-content .btn,
+.hero-content a.btn{
+  background:linear-gradient(135deg,#b96f61 0%,#ca8475 100%) !important;
+  border:1px solid #b96f61 !important;
+  color:#fff !important;
+  box-shadow:0 9px 24px rgba(156,86,70,.18) !important;
+}
+.hero-content .btn *,
+.hero-content a.btn *{
+  color:#fff !important;
+}
+.hero-content .btn:hover,
+.hero-content a.btn:hover{
+  background:linear-gradient(135deg,#a96154 0%,#bd7567 100%) !important;
+  color:#fff !important;
+  border-color:#a96154 !important;
+}
+
+/* Mobile: controles menores para não cobrir o conteúdo */
+@media(max-width:600px){
+  .carousel-arrow{
+    width:38px !important;
+    height:38px !important;
+    min-width:38px !important;
+    min-height:38px !important;
+    font-size:22px !important;
+    background:rgba(255,250,245,.94) !important;
+  }
+  .carousel-arrow.prev{left:10px !important}
+  .carousel-arrow.next{right:10px !important}
+}
+
+.fiber-origin{padding:54px 24px!important;background:linear-gradient(110deg,#f2d8cf,#fffaf5 48%,#f7e7df)!important;border-block:1px solid rgba(160,102,79,.12)}
+.fiber-origin-inner{max-width:1180px;margin:auto;text-align:center}
+.fiber-origin-kicker{display:block;margin-bottom:10px;color:#ad6c5c;font-size:10px;font-weight:700;letter-spacing:3.5px}
+.fiber-origin h2{margin:0 0 30px;color:#3c2a23!important;font-family:"Cormorant Garamond",serif;font-size:clamp(28px,3vw,42px);font-weight:600}
+.fiber-origin-items{display:flex;align-items:center;justify-content:center;gap:34px;max-width:850px;margin:auto;padding:23px 32px;background:rgba(255,252,248,.8);border:1px solid rgba(185,138,60,.18);border-radius:18px;box-shadow:0 12px 34px rgba(100,62,43,.06)}
+.fiber-origin-item{display:flex;align-items:center;gap:13px;text-align:left}.fiber-flag{font-size:32px}.fiber-origin-item strong{display:block;color:#49342b;font-size:14px}.fiber-origin-item small{display:block;margin-top:3px;color:#8a7165;font-size:11px}.fiber-divider{width:1px;height:42px;background:linear-gradient(transparent,rgba(185,138,60,.45),transparent)}
+@media(max-width:650px){.fiber-origin{padding:40px 18px!important}.fiber-origin-items{flex-direction:column;align-items:stretch;gap:0;padding:8px 22px}.fiber-origin-item{padding:16px 4px}.fiber-divider{width:100%;height:1px;background:linear-gradient(90deg,transparent,rgba(185,138,60,.35),transparent)}}
+
+/* ==========================================================
+   V13 — AJUSTES MOBILE + SWIPER + BANDEIRAS
+   ========================================================== */
+
+/* Bandeiras de verdade */
+.fiber-flag{
+  font-family:"Apple Color Emoji","Segoe UI Emoji","Noto Color Emoji",sans-serif !important;
+  font-size:34px !important;
+  line-height:1 !important;
+  min-width:42px;
+  text-align:center;
+  letter-spacing:0 !important;
+  font-weight:400 !important;
+}
+
+/* FAQ: títulos agora têm contraste suficiente */
+.faq-section details summary,
+.faq-list summary,
+.faq-item summary{
+  color:#4a342b !important;
+  opacity:1 !important;
+  font-weight:600 !important;
+}
+.faq-section details p,
+.faq-list p,
+.faq-item p{
+  color:#765d52 !important;
+  opacity:1 !important;
+}
+.faq-section details{
+  border-bottom:1px solid rgba(91,61,49,.42) !important;
+}
+.faq-section details summary::marker{
+  color:#b98a3c !important;
+}
+
+/* A seção que estava preta passa a fazer parte da identidade rosé */
+.statement{
+  background:
+    radial-gradient(circle at 50% 0,rgba(217,182,109,.12),transparent 38%),
+    linear-gradient(135deg,#f4ddd5 0%,#fff8f2 52%,#efd0c6 100%) !important;
+  border-color:rgba(157,99,77,.14) !important;
+  color:#3f2d26 !important;
+}
+.statement > span{color:#a96c5a !important}
+.statement h2{color:#3d2a23 !important}
+.statement h2 em{color:#b98a3c !important}
+.statement p{color:#71584e !important}
+.statement > a{
+  background:linear-gradient(135deg,#b96f61,#ca8475) !important;
+  border-color:#b96f61 !important;
+  color:#fff !important;
+  box-shadow:0 9px 24px rgba(156,86,70,.16) !important;
+}
+.statement > a:hover{
+  background:linear-gradient(135deg,#a96154,#bd7567) !important;
+  color:#fff !important;
+}
+
+/* SWIPER HERO */
+.heroSwiper{
+  position:relative;
+  overflow:hidden;
+}
+.heroSwiper .swiper-wrapper{
+  height:100%;
+}
+.heroSwiper .swiper-slide{
+  height:100%;
+  position:relative;
+  overflow:hidden;
+}
+
+/* Remove totalmente qualquer estilo das setas antigas */
+.carousel-arrow,
+.prev,
+.next{
+  display:none !important;
+}
+
+/* Paginação em barrinhas retangulares */
+.hero-pagination{
+  position:absolute !important;
+  left:50% !important;
+  bottom:18px !important;
+  transform:translateX(-50%) !important;
+  width:auto !important;
+  z-index:20 !important;
+  display:flex !important;
+  align-items:center;
+  justify-content:center;
+  gap:7px;
+}
+.hero-pagination .hero-bullet{
+  appearance:none;
+  -webkit-appearance:none;
+  display:block;
+  width:10px;
+  height:6px;
+  padding:0;
+  margin:0;
+  border:0;
+  border-radius:2px;
+  background:rgba(112,82,69,.28);
+  cursor:pointer;
+  transition:width .22s ease,background .22s ease,transform .22s ease;
+}
+.hero-pagination .hero-bullet-active{
+  width:26px;
+  background:linear-gradient(90deg,#b98a3c,#d4ad62);
+  box-shadow:0 2px 8px rgba(145,97,42,.16);
+}
+
+/* Mobile */
+@media(max-width:600px){
+  .hero-pagination{
+    bottom:15px !important;
+    gap:6px;
+  }
+  .hero-pagination .hero-bullet{
+    width:9px;
+    height:5px;
+  }
+  .hero-pagination .hero-bullet-active{
+    width:24px;
+  }
+
+  .fiber-flag{
+    font-size:32px !important;
+    min-width:40px;
+  }
+
+  .faq-section details summary,
+  .faq-list summary,
+  .faq-item summary{
+    color:#49352d !important;
+    font-size:13px !important;
+  }
+
+  .statement{
+    padding-top:74px !important;
+    padding-bottom:74px !important;
+  }
+}
+
+/* ==========================================================
+   V14 — FIX SWIPER + SVG FLAGS
+   ========================================================== */
+
+/* O CSS antigo escondia .hero-slide esperando a classe .active.
+   Agora quem controla o slide é o Swiper. */
+.heroSwiper .hero-slide,
+.heroSwiper .swiper-slide{
+  position:relative !important;
+  inset:auto !important;
+  display:block !important;
+  opacity:1 !important;
+  visibility:visible !important;
+  flex-shrink:0 !important;
+  height:100% !important;
+}
+
+/* Swiper precisa de altura real para foto e conteúdo */
+.heroSwiper,
+.heroSwiper .swiper-wrapper{
+  width:100% !important;
+  height:615px !important;
+}
+.heroSwiper .swiper-wrapper{
+  display:flex !important;
+}
+
+/* Mantém a foto absoluta dentro de cada slide */
+.heroSwiper .hero-photo,
+.heroSwiper .hero-overlay{
+  position:absolute !important;
+  inset:0 !important;
+}
+.heroSwiper .hero-content{
+  position:absolute !important;
+}
+
+/* Remove regras visuais ligadas ao antigo .active */
+.heroSwiper .hero-slide .hero-photo{
+  transform:scale(1.01) !important;
+}
+.heroSwiper .swiper-slide-active .hero-photo{
+  transform:scale(1.035) !important;
+}
+
+/* Paginação sem artefatos de button/default focus */
+.hero-pagination .hero-bullet{
+  font-size:0 !important;
+  outline:none !important;
+  border:none !important;
+  box-shadow:none;
+}
+.hero-pagination .hero-bullet:focus-visible{
+  outline:2px solid rgba(185,138,60,.45) !important;
+  outline-offset:3px !important;
+}
+
+/* Bandeiras SVG consistentes em Windows, Chrome, Edge etc. */
+.fiber-flag-svg{
+  width:42px;
+  min-width:42px;
+  height:28px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.fiber-flag-svg svg{
+  width:36px;
+  height:24px;
+  display:block;
+  border-radius:3px;
+  box-shadow:0 2px 7px rgba(80,48,32,.10);
+}
+
+/* Esconde qualquer regra antiga de emoji */
+.fiber-flag{
+  display:none !important;
+}
+
+@media(max-width:820px){
+  .heroSwiper,
+  .heroSwiper .swiper-wrapper{
+    height:660px !important;
+  }
+}
+
+@media(max-width:600px){
+  .heroSwiper,
+  .heroSwiper .swiper-wrapper{
+    height:590px !important;
+  }
+
+  .fiber-flag-svg{
+    width:40px;
+    min-width:40px;
+    height:27px;
+  }
+  .fiber-flag-svg svg{
+    width:34px;
+    height:23px;
+  }
+}
+
+/* ==========================================================
+   V15 — SWIPER SEM EMENDA ENTRE SLIDES
+   ========================================================== */
+.heroSwiper{
+  width:100% !important;
+  overflow:hidden !important;
+  isolation:isolate;
+}
+.heroSwiper .swiper-wrapper{
+  width:100% !important;
+  box-sizing:border-box !important;
+}
+.heroSwiper .swiper-slide{
+  width:100% !important;
+  min-width:100% !important;
+  max-width:100% !important;
+  flex:0 0 100% !important;
+  box-sizing:border-box !important;
+  overflow:hidden !important;
+  backface-visibility:hidden;
+  -webkit-backface-visibility:hidden;
+  transform:translateZ(0);
+}
+
+/* impede qualquer pixel do próximo slide de aparecer nas bordas */
+.heroSwiper::before,
+.heroSwiper::after{
+  content:"";
+  position:absolute;
+  top:0;
+  bottom:0;
+  width:2px;
+  z-index:25;
+  pointer-events:none;
+  background:#f8e7df;
+}
+.heroSwiper::before{left:0}
+.heroSwiper::after{right:0}
+
+/* cada slide pinta seu próprio fundo inteiro */
+.heroSwiper .swiper-slide{
+  background:#f8e7df !important;
+}
+
+/* evita artefato visual de transição */
+.heroSwiper .swiper-slide:not(.swiper-slide-active){
+  pointer-events:none;
+}
+
+/* No mobile usamos translate sem arredondamento estranho */
+@media(max-width:600px){
+  .heroSwiper .swiper-slide{
+    width:100vw !important;
+    min-width:100vw !important;
+    max-width:100vw !important;
+    flex-basis:100vw !important;
+  }
+}
