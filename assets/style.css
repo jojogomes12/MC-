@@ -33,7 +33,7 @@
 .hero-carousel{height:615px;position:relative;overflow:hidden;background:#0a0a0a}.hero-slide{position:absolute;inset:0;opacity:0;visibility:hidden;transition:opacity .65s ease}.hero-slide.active{opacity:1;visibility:visible}.hero-photo{
   position:absolute;inset:0;
   background-color:#020202;
-  background-image:url("../LOGO/Fatima.jpeg");
+  background-image:url("../LOGO/FATIMA.png");
   background-repeat:no-repeat;
   background-size:auto 145%;
   background-position:right 38%;
@@ -1207,5 +1207,37 @@ footer,.site-footer{
     min-width:100vw !important;
     max-width:100vw !important;
     flex-basis:100vw !important;
+  }
+}
+
+/* ==========================================================
+   V16 — ENQUADRAMENTO DESKTOP DA FOTO
+   ========================================================== */
+
+/* Desktop: mostra melhor o topo da cabeça/rosto */
+@media(min-width:821px){
+  .heroSwiper .hero-photo,
+  .hero-photo{
+    background-size:auto 132% !important;
+    background-position:right 28% !important;
+    transform-origin:right center !important;
+  }
+
+  .heroSwiper .swiper-slide-active .hero-photo{
+    transform:scale(1.015) !important;
+  }
+
+  /* variações entre slides sem cortar a testa */
+  .heroSwiper .hero-photo.pos-1{background-position:right 26% !important}
+  .heroSwiper .hero-photo.pos-2{background-position:right 30% !important}
+  .heroSwiper .hero-photo.pos-3{background-position:right 32% !important}
+}
+
+/* telas desktop mais largas */
+@media(min-width:1400px){
+  .heroSwiper .hero-photo,
+  .hero-photo{
+    background-size:auto 126% !important;
+    background-position:right 25% !important;
   }
 }
